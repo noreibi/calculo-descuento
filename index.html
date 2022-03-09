@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Descuento</title>
+</head>
+
+<body>
+    <section class="card-container">
+        <H2>Calcular Descuento</H2>
+        <div class="card">
+            <label for="precio-producto">
+                Precio
+            </label>
+            <input id="precio-producto" type="number" onkeyup="descuentoProducto()" placeholder="1">
+            <br>
+            <label for="descuento-producto">
+                Descuento(%)
+            </label>
+            <input id="descuento-producto" type="number" onkeyup="descuentoProducto()" placeholder="1">
+            <br>
+            <label>
+                Total a pagar
+            </label>
+            <span id="resultado">0,00</span>
+            <br>
+            <button class="reiniciar" onclick="reiniciarBoton()">
+                reiniciar
+            </button>
+        </div>
+    </section>
+    <script src="./descuento.js"></script>
+</body>
+
+</html>
